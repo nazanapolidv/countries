@@ -25,11 +25,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es">
-      <Header />
       <body
         className={`${lexend.variable} ${lexendGiga.variable} antialiased`}
       >
-        {children}
+        <Header />
+        <main>
+          {children}
+
+        </main>
       </body>
     </html>
   );

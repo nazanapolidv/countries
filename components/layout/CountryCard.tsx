@@ -12,7 +12,6 @@ export const CountryCard = ({ country }: Props) => {
         ? Object.values(country.languages).join(', ')
         : 'N/A';
 
-    console.log(languagesString);
     return (
         <Link href={`/country/${country.cca3}`}>
             <article className="rounded-lg shadow-md overflow-hidden bg-white dark:bg-gray-800 hover:scale-105 transition-transform cursor-pointer h-full">

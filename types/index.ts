@@ -13,4 +13,6 @@ export interface Country {
   capital?: string[];
   cca3: string;
   languages?: { [key: string]: string };
+  independent?: boolean;
+  continents?: string[];
 }
